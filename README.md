@@ -37,7 +37,7 @@ The files pampelmuse.json and se.config contain the information for the PSF fit,
 
 After all this is done, you simply run:
 
-		python psf_fit.py
+		python psf_fitting.py
 
 And the code will do all the steps sequentially one by one. When the script finish one of the process, it will ask you if you want to continue with the next one. If the answer is "no", then the process is stopped. 
 
