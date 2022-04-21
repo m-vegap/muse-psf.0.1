@@ -2,7 +2,7 @@
 
 This repository stores scripts for PSF fitting from IFS data using PampelMuse. (https://gitlab.gwdg.de/skamann/pampelmuse).
 
-The main script is utils.py, which contains all the necessary steps to prepare the input catalogue necessary to run PampelMuse. This steps are described below: 
+The main script is psf_fitting.py, which contains all the necessary steps to prepare the input catalogue necessary to run PampelMuse. This steps are described below: 
 
 1. Scan directory: Scan the directory that contains your single datacubes and create a monitoring file to keep the track of the progress.
   
@@ -30,14 +30,14 @@ This script makes use of the following important libraries and softwares:
 USAGE
 -----
 
-Before running the code, you must change the hardcoded.py file, which contains the paths of the folders where you want to store the filter images, catalogues and psf files. If this folders is not in the library folder, the script creates them in the correspondent process. Also contains the instrument gain and the passband that you want to use to create the filter images.
+Before running the code, you must change the paths.py file, which contains the paths of the folders where you want to store the filter images, catalogues and psf files. If this folders is not in the library folder, the script creates them in the correspondent process. Also contains the instrument gain and the passband that you want to use to create the filter images.
 
 After this is done, you must change the configuration files stored in the "config" folder. The default files and se.params are not necessary to change unless you want to use other configuration and obtain more or less parameters in the first catalogue.  
 The files pampelmuse.json and se.config contain the information for the PSF fit, so you must change it with the parameters of the instrument and initial parameters of the PSF. 
 
 After all this is done, you simply run:
 
-		python psf_fitting.py
+		python psf_fitting.py <Datacubes Directory> <n° of files to process>
 
 And the code will do all the steps sequentially one by one. When the script finish one of the process, it will ask you if you want to continue with the next one. If the answer is "no", then the process is stopped. 
 
