@@ -1,0 +1,39 @@
+{
+  "global": {
+    "prefix": "/diska/home/opsproj2/aomuse/macarena/muse_psf/single_std/M.MUSE.2022-01-07T21:19:23.150",
+    "cpucount": 16,
+    "interact":false
+  },
+"initfit": {
+    "posfit": 0,
+    "zeromag": 21.9, 
+    "ccmaxoff": -1
+  },
+  "catalog": {
+     "passband": "COUSINS_I",
+     "name": "/diska/home/opsproj2/aomuse/macarena/muse_psf/cats/M.MUSE.2022-01-07T21:19:23.150_Cousins_I.ppmuse_in.dat"
+  },
+  "psf": {
+    "inspect": true,
+    "profile": "maoppy",
+    "fwhm": 3.0,
+    "beta": 2.5,
+    "e":0.05,
+    "theta":0.0,
+    "radius": 10,
+    "fit": 254
+  },
+  "polynom": {
+    "type": "plain",
+    "degree":3
+  },
+  "sky": {
+    "binsize": 50
+  },
+ "getspectra": {
+    "prefix": "PM_SPC_"
+  },
+ "layers": {
+    "binning": 100
+  }
+ }

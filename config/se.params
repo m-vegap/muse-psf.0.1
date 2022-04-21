@@ -1,0 +1,29 @@
+NUMBER                   #Running object number
+FLUX_AUTO
+MAG_AUTO
+MAGERR_AUTO
+#FLUX_ISO
+#MAG_ISO                 #Fixed aperture magnitude vector                           [mag]
+#MAGERR_ISO              #RMS error vector for fixed aperture mag.                  [mag]
+#FLUX_ISOCOR
+#MAG_ISOCOR
+#MAGERR_ISOCOR
+#FLUX_APER
+#MAG_APER
+#MAGERR_APER
+#FLUX_BEST
+#MAG_BEST
+#MAGERR_BEST
+#FLUX_PETRO
+#MAG_PETRO
+#MAGERR_PETRO
+#SNR_WIN                  #Gaussian-weighted SNR
+X_IMAGE_DBL              #Object position along x (double precision)                [pixel]
+Y_IMAGE_DBL              #Object position along y (double precision)                [pixel]
+ALPHA_J2000              #Right ascension of barycenter (J2000)                     [deg]
+DELTA_J2000              #Declination of barycenter (J2000)                         [deg]
+THETA_IMAGE              Position angle (CCW/x)                                    [deg]
+FWHM_IMAGE               FWHM assuming a gaussian core                             [pixel]
+FWHM_WORLD               FWHM assuming a gaussian core                             [deg]
+ELLIPTICITY              #1 - B_IMAGE/A_IMAGE
+CLASS_STAR               #S/G classifier output
